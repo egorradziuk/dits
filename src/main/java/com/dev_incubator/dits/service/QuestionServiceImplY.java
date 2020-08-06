@@ -24,7 +24,7 @@ public class QuestionServiceImplY implements QuestionServiceY {
     }
 
     @Override
-    public List<AnswerY> getAnswersByQuestionId(int id) {
+    public List<AnswerY> getAnswersByQuestionId(Long id) {
         return questionRepositoryY.getAnswersByQuestionId(id);
     }
 }

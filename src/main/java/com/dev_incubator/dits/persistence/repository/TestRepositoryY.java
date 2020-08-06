@@ -10,7 +10,7 @@ import java.util.List;
 
 @Repository
 public interface TestRepositoryY extends JpaRepository<TestY, Long> {
-    List<TestY> findAllTestByTopicYId(int id);
+    List<TestY> findAllTestByTopicYId(Long id);
 
     //    @Query("From Test ts Join ts.topic tp Where tp.id = 1")
     List<QuestionY> getTestsByTopicYName(String topic);

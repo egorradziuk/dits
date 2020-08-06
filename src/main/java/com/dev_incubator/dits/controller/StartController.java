@@ -20,11 +20,6 @@ public class StartController {
         return "userTest";
     }
 
-    @GetMapping(value = "/chooseTest")
-    public String ChooseTest(Model model) {
-        model.addAttribute("topics", topicService.findAll());
-        return "userChoose";
-    }
 
     @GetMapping(value = "/personalStatistic")
     public String personalStatisticPage() {

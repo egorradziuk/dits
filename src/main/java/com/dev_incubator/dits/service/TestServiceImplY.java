@@ -23,7 +23,7 @@ public class TestServiceImplY implements TestServiceY {
     }
 
     @Override
-    public List<TestY> findAllTestByTopicYId(int id) {
+    public List<TestY> findAllTestByTopicYId(Long id) {
         return testRepositoryY.findAllTestByTopicYId(id);
     }
 

@@ -27,7 +27,7 @@
                     <a class="dropdown-item" href="#">Create</a>
                     <a class="dropdown-item" href="#">Edit</a>
                     <a class="dropdown-item" href="#">Delete</a>
-                    <a class="dropdown-item" href="#">Pass</a>
+                    <a class="dropdown-item" href="<%=application.getContextPath()%>/choose/chooseTest">Pass</a>
                 </div>
             </li>
             <li class="nav-item dropdown">

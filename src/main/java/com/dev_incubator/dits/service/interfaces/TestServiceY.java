@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface TestServiceY {
     List<TestY> findAll();
-    List<TestY> findAllTestByTopicYId(int id);
+    List<TestY> findAllTestByTopicYId(Long id);
     List<QuestionY> getQuestionsByTestName(String topic);
 }

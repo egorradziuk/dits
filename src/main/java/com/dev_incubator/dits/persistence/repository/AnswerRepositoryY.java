@@ -9,5 +9,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface AnswerRepositoryY extends JpaRepository<AnswerY, Long> {
     @Query("from AnswerY where id = ?1")
-    AnswerY getCorrectByDescription(int id);
+    AnswerY getCorrectByDescription(Long id);
 }

@@ -13,7 +13,7 @@ public class AnswerY {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @Column(name = "description")
     private String description;

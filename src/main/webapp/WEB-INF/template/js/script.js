@@ -24,7 +24,7 @@ $().ready(
     function () {
         $("#themes").change(function (event) {
             $.ajax({
-                url: "/userChoose",
+                url: "/choose/userChoose",
                 type: "GET",
                 dataType: "json",
                 data: {topic: $(event.target).val()},

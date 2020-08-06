@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface QuestionServiceY {
     List<QuestionY> findAllQuestions();
-    List<AnswerY> getAnswersByQuestionId(int id);
+    List<AnswerY> getAnswersByQuestionId(Long id);
 }

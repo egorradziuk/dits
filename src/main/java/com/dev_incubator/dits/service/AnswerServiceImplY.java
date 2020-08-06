@@ -15,7 +15,7 @@ public class AnswerServiceImplY implements AnswerServiceY {
     private final AnswerRepositoryY answerRepositoryY;
 
     @Override
-    public AnswerY getCorrectByDescription(int id) {
+    public AnswerY getCorrectByDescription(Long id) {
         return answerRepositoryY.getCorrectByDescription(id);
     }
 }

@@ -16,7 +16,7 @@ public class TopicY {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @OneToMany(mappedBy = "topicY")
     @LazyCollection(LazyCollectionOption.FALSE)

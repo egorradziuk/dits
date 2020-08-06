@@ -9,23 +9,27 @@ import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
-@RestController
+@Controller
+@RequestMapping(value = "/choose")
 @AllArgsConstructor
-public class ChooseController {
+public class ChooseTestControllerY {
 
 
     private final TopicServiceY topicService;
 
     private final TestServiceY testService;
+
+    @GetMapping(value = "/chooseTest")
+    public String ChooseTest(Model model) {
+        model.addAttribute("topics", topicService.findAll());
+        return "userChoose";
+    }
 
     @GetMapping(value = "/userChoose", produces = APPLICATION_JSON_VALUE)
     @ResponseBody

@@ -16,7 +16,7 @@ public class UserServiceImplY implements UserServiceY {
     private final UserRepositoryY userRepositoryY;
 
     @Override
-    public UserY findUserById(int id) {
+    public UserY findUserById(Long id) {
         return userRepositoryY.findUserById(id);
     }
 }

@@ -11,5 +11,5 @@ import java.util.List;
 @Repository
 public interface QuestionRepositoryY extends JpaRepository <QuestionY, Long> {
     @Query("from AnswerY where questionY.id = ?1")
-    List<AnswerY> getAnswersByQuestionId(int id);
+    List<AnswerY> getAnswersByQuestionId(Long id);
 }
